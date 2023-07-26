@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)$ /template/index.php?path=$1 [NC,L,QSA]

@@ -1,0 +1,26 @@
+modify the following to start with the project
+    - .htaccess file 
+        - line 2 and 6 => check "template" text
+    - index.php file 
+        - line 6 => check "template" text
+    - inside the /app folder
+        -.htaccess
+            - line 2 => check "template" text
+
+-------------------------
+flow:
+-> all request will go to index.php
+    ->including the views
+-> index.php
+    ->calling controllers using the uri
+        -> {controller} / {function name}
+
+-> app/
+    -> controllers/
+        -> contoller FILENAMES should have the same CLASSNAME
+            -> example "Contacts.php" should have one class "class Contacts"
+            -> contollers should contain all codes ready for "Models"
+    -> models/
+        -> can access the "BuildQuery.php"
+            -> dynamic queries
+            -> should only contain codes for BuildQuery()
