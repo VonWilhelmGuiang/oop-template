@@ -13,5 +13,6 @@ function formatQueryResult(object $query_result, $dataType){
 }
 
 function jsonResponse(object $response) : string{
-    die(json_encode($response));
+    echo json_encode($response);
+    die(http_response_code($response->status_code));
 }
